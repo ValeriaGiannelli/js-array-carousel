@@ -29,4 +29,7 @@ for(i = 0; i< imagineArray.length; i++){
 
     // dove metto questo div? Nel mio contenitore che è il [div class="col"] quindi aggiungo a riga 18 il richiamo del div
 
+    // inserisco il div nel contenitore
+    containerCard.innerHTML += card;
+
 }
