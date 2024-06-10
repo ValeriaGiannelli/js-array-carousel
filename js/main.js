@@ -14,13 +14,19 @@ const imagineArray = [
     "img/05.webp"
 ];
 
+//richiamo il contenitore dove andrò ad inserire i DIV
+let containerCard = document.querySelector(".col");
+
+
 // prendo i singoli elementi del mio array -> ciclo FOR
 for(i = 0; i< imagineArray.length; i++){
     console.log(imagineArray[i]);
-    
+
     // per ogni "i" questo ciclo mi deve creare un div con le immagini
     let card = `<div class="item">
                     <img src=${imagineArray[i]} alt="">
                  </div>`;
+
+    // dove metto questo div? Nel mio contenitore che è il [div class="col"] quindi aggiungo a riga 18 il richiamo del div
 
 }
