@@ -61,5 +61,10 @@ let clickDown = document.querySelector(".arrow_down");
 clickDown.addEventListener("click", 
     function(){
         // quando clicco il valore dell'indice deve aumentare
+        indexCardItem++;
+
+        // metto la classe all'elemento corrispondente
+        cardItem[indexCardItem].classList.add("active");
+
     }
 );
