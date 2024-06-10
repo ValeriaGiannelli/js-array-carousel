@@ -51,3 +51,15 @@ console.log(cardItem[3]);
 let indexCardItem = 0; //lo setto a 0 come valore iniziale
 
 cardItem[indexCardItem].classList.add("active");
+
+// al click della freccia in giù va alla seconda immagine:
+
+// richiamo il bottone
+let clickDown = document.querySelector(".arrow_down");
+
+// aggiungo l'evento di click
+clickDown.addEventListener("click", 
+    function(){
+        // quando clicco il valore dell'indice deve aumentare
+    }
+);
