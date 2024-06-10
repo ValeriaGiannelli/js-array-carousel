@@ -60,13 +60,17 @@ let clickDown = document.querySelector(".arrow_down");
 // aggiungo l'evento di click
 clickDown.addEventListener("click", 
     function(){
-        // quando clicco il valore dell'indice deve aumentare
-        indexCardItem++;
 
-        // metto la classe all'elemento corrispondente
-        cardItem[indexCardItem].classList.add("active"); 
+        // far funzionare le frecce fino a quando ci sono gli elementi in pagina altrimenti si ferma
+        if(indexCardItem < cardItem.length - 1){ //metto il -1 perché altrimenti arrivato all'index 4 mi metterebbe la classe attiva sul 5 che non esiste
+             // quando clicco il valore dell'indice deve aumentare
+            indexCardItem++;
 
-        // tolgo la classe all'elemento precedente
-        cardItem[indexCardItem-1].classList.remove("active");
+            // metto la classe all'elemento corrispondente
+            cardItem[indexCardItem].classList.add("active"); 
+
+            // tolgo la classe all'elemento precedente
+            cardItem[indexCardItem-1].classList.remove("active");
+        } 
     }
 );
