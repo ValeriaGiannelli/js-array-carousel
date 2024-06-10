@@ -32,5 +32,11 @@ for(i = 0; i< imagineArray.length; i++){
     // inserisco il div nel contenitore
     containerCard.innerHTML += card;
     // vedo che mi si creano sotto le freccie, quindi faccio un ulteriore contenitore
-
 }
+
+// ho creato i miei div e ora devo mettere l'active al primo div che poi al click passerà al successivo e così via
+
+// visto che sono tanti e non posso farlo manualmente creerò anche qua un array -> getElemnts!
+
+const cardItem = document.getElementsByClassName("item");
+console.log(cardItem);
