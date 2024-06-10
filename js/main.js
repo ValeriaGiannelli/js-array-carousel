@@ -44,7 +44,10 @@ console.log(cardItem);
 // in questo modo seleziono il div numero 4 (quello col gatto)
 console.log(cardItem[3]);
 
-// inserisco la classe active
-cardItem[3].classList.add("active");
+// inserisco la classe active di prova:
+// cardItem[3].classList.add("active");
 
 // non potendo cambiare i numeri a mano creo una variabili per andare ad indicare l'indice 
+let indexCardItem = 0; //lo setto a 0 come valore iniziale
+
+cardItem[indexCardItem].classList.add("active");
