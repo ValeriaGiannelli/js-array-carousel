@@ -19,21 +19,50 @@
     align-items: center;
 }
 
+/* dimensioni per il carosello */
 .col{
     width: 50%;
+    position: relative;
 }
 
+/* grandezza contenitore immagini */
 .item{
     width: 100%;
     /* height: 250px; */
     display: none;
 }
 
+/* grandezza immagini */
+.item img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+
+/* attivazione dell'immagine scelta */
 .item.active{
     display: block;
 }
 
-img{
-    width: 100%;
-    /* height: 100%; */
+
+/* posizionamento delle frecce */
+.btn{
+    background: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.arrow_up{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.arrow_down{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
 }
