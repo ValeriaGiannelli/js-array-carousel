@@ -64,7 +64,9 @@ clickDown.addEventListener("click",
         indexCardItem++;
 
         // metto la classe all'elemento corrispondente
-        cardItem[indexCardItem].classList.add("active");
+        cardItem[indexCardItem].classList.add("active"); 
 
+        // tolgo la classe all'elemento precedente
+        cardItem[indexCardItem-1].classList.remove("active");
     }
 );
