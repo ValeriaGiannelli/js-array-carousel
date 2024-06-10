@@ -40,3 +40,11 @@ for(i = 0; i< imagineArray.length; i++){
 
 const cardItem = document.getElementsByClassName("item");
 console.log(cardItem);
+
+// in questo modo seleziono il div numero 4 (quello col gatto)
+console.log(cardItem[3]);
+
+// inserisco la classe active
+cardItem[3].classList.add("active");
+
+// non potendo cambiare i numeri a mano creo una variabili per andare ad indicare l'indice 
