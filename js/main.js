@@ -15,7 +15,7 @@ const imagineArray = [
 ];
 
 //richiamo il contenitore dove andrò ad inserire i DIV
-let containerCard = document.querySelector(".col");
+let containerCard = document.querySelector(".card_container");
 
 
 // prendo i singoli elementi del mio array -> ciclo FOR
@@ -31,5 +31,6 @@ for(i = 0; i< imagineArray.length; i++){
 
     // inserisco il div nel contenitore
     containerCard.innerHTML += card;
+    // vedo che mi si creano sotto le freccie, quindi faccio un ulteriore contenitore
 
 }
