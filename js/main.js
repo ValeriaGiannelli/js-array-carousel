@@ -63,14 +63,41 @@ clickDown.addEventListener("click",
 
         // far funzionare le frecce fino a quando ci sono gli elementi in pagina altrimenti si ferma
         if(indexCardItem < cardItem.length - 1){ //metto il -1 perché altrimenti arrivato all'index 4 mi metterebbe la classe attiva sul 5 che non esiste
-             // quando clicco il valore dell'indice deve aumentare
+            // tolgo la classe all'elemento che la ha in questo momento
+            cardItem[indexCardItem].classList.remove("active");
+
+             // aumento il valore dell'indice
             indexCardItem++;
 
             // metto la classe all'elemento corrispondente
             cardItem[indexCardItem].classList.add("active"); 
 
-            // tolgo la classe all'elemento precedente
-            cardItem[indexCardItem-1].classList.remove("active");
+            
         } 
     }
 );
+
+
+// al click della freccia in su va all'immagine precedente:
+
+// richiamo il bottone
+let clickUp = document.querySelector(".arrow_up");
+
+// aggiungo l'evento di click
+clickUp.addEventListener("click", 
+    function(){
+
+        // far funzionare le frecce fino a quando ci sono gli elementi in pagina altrimenti si ferma
+        if(indexCardItem > 0){ 
+            // toglie la classe all'elemento corrispondente
+            cardItem[indexCardItem].classList.remove("active"); 
+
+            // diminuisce l'indice di uno
+            indexCardItem--;
+
+            // aggiunge la classe all'elemento precedente
+            cardItem[indexCardItem].classList.add("active");
+        } 
+    }
+);
+
