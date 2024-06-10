@@ -17,6 +17,10 @@ const imagineArray = [
 // prendo i singoli elementi del mio array -> ciclo FOR
 for(i = 0; i< imagineArray.length; i++){
     console.log(imagineArray[i]);
-    // per ogni i questo ciclo mi deve creare un div con le immagini
     
+    // per ogni "i" questo ciclo mi deve creare un div con le immagini
+    let card = `<div class="item">
+                    <img src=${imagineArray[i]} alt="">
+                 </div>`;
+
 }
